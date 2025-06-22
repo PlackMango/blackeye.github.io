@@ -1,107 +1,92 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>البلاك آي | Black Eye</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البلاك آي</title>
   <style>
     body {
-      background: linear-gradient(black, #1a1a1a);
-      color: #fff;
-      font-family: 'Cairo', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      line-height: 1.8;
     }
     header {
-      background: #111;
-      padding: 30px;
+      background-color: #111;
       text-align: center;
-      box-shadow: 0 0 10px orange;
+      padding: 2rem;
     }
     header h1 {
-      font-size: 40px;
-      color: orange;
+      margin: 0;
+      font-size: 3rem;
+      color: #f5a623;
     }
     nav {
       display: flex;
       justify-content: center;
       background: #222;
-      padding: 10px;
+      padding: 1rem;
+      gap: 2rem;
     }
     nav a {
-      color: white;
-      margin: 0 20px;
+      color: #f5a623;
       text-decoration: none;
       font-weight: bold;
     }
     section {
-      padding: 30px;
-      text-align: center;
+      padding: 3rem;
     }
     h2 {
-      color: orange;
-      font-size: 32px;
+      color: #f5a623;
     }
-    img {
-      max-width: 90%;
+    .gallery img {
+      width: 100%;
+      max-width: 400px;
+      margin: 1rem;
       border-radius: 10px;
-      margin: 20px 0;
-      box-shadow: 0 0 15px #f90;
+      box-shadow: 0 0 15px #333;
     }
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-      color: #aaa;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>👁️ البلاك آي 👁️</h1>
-    <p>مرحباً بك في عالمي الإبداعي</p>
-  </header>
-
-  <nav>
-    <a href="#about">من أنا 🧑‍💻</a>
-    <a href="#projects">مشاريعي 🔧</a>
-    <a href="#vision">رؤيتي 🎯</a>
-    <a href="#contact">تواصل معي 📬</a>
-  </nav>
-
-  <section id="about">
-    <h2>من أنا 👤</h2>
-    <p>أنا محمد عريفي آدم منصور، مصمم ومبدع سوداني في عالم الألعاب والرياضة، أعمل حالياً على مشروع مطعم Black Mango 🎨🍹، وأسعى لبناء مستقبل في التصميم وتطوير الألعاب الإلكترونية. أحب الإبداع ومشاركة أفكاري 💡.</p>
-  </section>
-
-  <section id="projects">
-    <h2>مشاريعي 🚀</h2>
+    <h1>البلاك آي</h1>
+    <p>مرحباً بك في موقعي الشخصي</p>
+  </header>  <nav>
+    <a href="#about">من أنا</a>
+    <a href="#projects">مشاريعي</a>
+    <a href="#designs">أعمال التصميم</a>
+    <a href="#vision">رؤيتي</a>
+    <a href="#contact">تواصل معي</a>
+  </nav>  <section id="about">
+    <h2>من أنا</h2>
+    <p>أنا بلاك آي عريفي، مهتم بالألعاب الإلكترونية والإبداع الرقمي. أعمل على تطوير ذاتي باستمرار وأطمح لبناء مسيرة مميزة في عالم التقنية والتصميم.</p>
+  </section>  <section id="projects">
+    <h2>مشاريعي</h2>
     <ul>
-      <li>📍 مطعم Black Mango (مساحة 8x4 متر)</li>
-      <li>🎮 تصميمات وتعديلات داخل لعبة PES</li>
-      <li>🕹️ حسابي في ببجي: لوفى جن MN (UID: 51670508439)</li>
+      <li>تعديلات إبداعية في لعبة PES</li>
+      <li>محتوى ترفيهي مرئي متعلق بالألعاب والتقنية</li>
     </ul>
-    <img src="pubg.jpg" alt="صورة ببجي" />
-    <img src="pes.jpg" alt="صورة PES" />
+  </section>  <section id="designs">
+    <h2>أعمال التصميم</h2>
+    <div class="gallery">
+      <img src="success-roadmap.jpg" alt="خارطة النجاح">
+      <img src="black-mango-restaurant.jpg" alt="مطعم Black Mango">
+      <img src="me.jpg" alt="صورة شخصية">
+    </div>
+  </section>  <section id="vision">
+    <h2>رؤيتي</h2>
+    <p>أدمج بين التقنية والخيال الإبداعي لصنع تجارب ملهمة ومؤثرة في مجال الترفيه الرقمي.</p>
+  </section>  <section id="contact">
+    <h2>تواصل معي</h2>
+    <p>🎮 PUBG: لوفى جن - UID: 51670508439</p>
+    <p>⚽ PES: Sudanesehot</p>
+    <p>🎨 إنستغرام: <a href="https://instagram.com/opkyfymhmd72" target="_blank" style="color:#f5a623">opkyfymhmd72</a></p>
   </section>
-
-  <section id="vision">
-    <h2>رؤيتي المستقبلية 🌟</h2>
-    <p>أدمج بين الإبداع والتقنية لبناء مشاريع فريدة وملهمة 🎨💻</p>
-  </section>
-
-  <section id="contact">
-    <h2>تواصل معي 📞</h2>
-    <p>📸 إنستغرام: <a href="https://instagram.com/opkyfymhmd72" target="_blank">@opkyfymhmd72</a></p>
-    <p>🎮 PES: Sudanesehot</p>
-    <p>📍 الموقع: مجهول</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Black Eye. جميع الحقوق محفوظة.
-  </footer>
-
 </body>
 </html>
