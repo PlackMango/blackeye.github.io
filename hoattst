@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>البلاك آي | Black Eye</title>
+  <style>
+    body {
+      background: linear-gradient(black, #1a1a1a);
+      color: #fff;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #111;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 10px orange;
+    }
+    header h1 {
+      font-size: 40px;
+      color: orange;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      text-align: center;
+    }
+    h2 {
+      color: orange;
+      font-size: 32px;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 0 15px #f90;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>👁️ البلاك آي 👁️</h1>
+    <p>مرحباً بك في عالمي الإبداعي</p>
+  </header>
+
+  <nav>
+    <a href="#about">من أنا 🧑‍💻</a>
+    <a href="#projects">مشاريعي 🔧</a>
+    <a href="#vision">رؤيتي 🎯</a>
+    <a href="#contact">تواصل معي 📬</a>
+  </nav>
+
+  <section id="about">
+    <h2>من أنا 👤</h2>
+    <p>أنا محمد عريفي آدم منصور، مصمم ومبدع سوداني في عالم الألعاب والرياضة، أعمل حالياً على مشروع مطعم Black Mango 🎨🍹، وأسعى لبناء مستقبل في التصميم وتطوير الألعاب الإلكترونية. أحب الإبداع ومشاركة أفكاري 💡.</p>
+  </section>
+
+  <section id="projects">
+    <h2>مشاريعي 🚀</h2>
+    <ul>
+      <li>📍 مطعم Black Mango (مساحة 8x4 متر)</li>
+      <li>🎮 تصميمات وتعديلات داخل لعبة PES</li>
+      <li>🕹️ حسابي في ببجي: لوفى جن MN (UID: 51670508439)</li>
+    </ul>
+    <img src="pubg.jpg" alt="صورة ببجي" />
+    <img src="pes.jpg" alt="صورة PES" />
+  </section>
+
+  <section id="vision">
+    <h2>رؤيتي المستقبلية 🌟</h2>
+    <p>أدمج بين الإبداع والتقنية لبناء مشاريع فريدة وملهمة 🎨💻</p>
+  </section>
+
+  <section id="contact">
+    <h2>تواصل معي 📞</h2>
+    <p>📸 إنستغرام: <a href="https://instagram.com/opkyfymhmd72" target="_blank">@opkyfymhmd72</a></p>
+    <p>🎮 PES: Sudanesehot</p>
+    <p>📍 الموقع: مجهول</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Black Eye. جميع الحقوق محفوظة.
+  </footer>
+
+</body>
+</html>
