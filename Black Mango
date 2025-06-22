@@ -8,7 +8,7 @@
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #0f172a;
-      color: #f8fafc;
+      color: #f8fafc
     }
     header {
       background: linear-gradient(to right, #1e293b, #0f172a);
