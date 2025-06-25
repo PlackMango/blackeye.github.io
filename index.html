@@ -1,63 +1,99 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Black Eye</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بلاك آي</title>
   <style>
     body {
-      background: linear-gradient(to bottom, #111827, #1f2937);
-      color: white;
-      font-family: 'Tahoma', sans-serif;
+      background: url('https://i.imgur.com/LmepdQx.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: #ffc107;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+    }
+    .section {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      border-radius: 12px;
+    }
+    .section img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      color: #aaa;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header class="text-center py-8">
-    <h1 class="text-4xl font-bold">Black Eye</h1>
-    <p class="text-lg mt-2">مرحباً بك في عالمي الخاص — تصميم، ألعاب، وأفكار إبداعية</p>
+  <header>
+    <h1>بلاك آي</h1>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 space-y-12">
+  <nav>
+    <a href="#about">نبذة</a>
+    <a href="#projects">أعمالي</a>
+    <a href="#designs">تصميمات</a>
+    <a href="#contact">تواصل</a>
+    <img src="design1.jpg" alt="تصميم 1" width="300">
+  </nav>
 
-    <!-- معرض الصور -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">📷 معرض الصور</h2>
-      <img src="images/real_madrid_sudan_crest.png" alt="في ملعب ريال مدريد" class="rounded-xl shadow-lg mx-auto" />
-      <p class="mt-2 text-center">في ملعب ريال مدريد، بتيشيرت منتخب السودان — لقطة فخرية</p>
-    </section>
+  <div class="section" id="about">
+    <h2>من أنا</h2>
+    <p>أنا بلاك آي، صانع محتوى ومصمم ومهتم بالرياضة والألعاب والتصميم الإبداعي. أعمل على مشاريع فريدة وأحب مشاركة أفكاري بصريًا.</p>
+    <img src="IMG_٢٠٢٣٣٣_٢٠٤٢٠٢.jpg" alt="صورة شخصية">
+  </div>
 
-    <!-- مشاريعي -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">📁 مشاريعي</h2>
-      <ul class="space-y-2 list-disc list-inside">
-        <li><strong>Black Mango</strong> — مطعم بفكرة عصرية في مساحة صغيرة</li>
-        <li><strong>Black Boy</strong> — لعبة منصات مستوحاة من Sackboy</li>
-        <li><strong>تعديلات PES</strong> — تصميم فرق ولاعبين خاصة</li>
-      </ul>
-    </section>
+  <div class="section" id="projects">
+    <h2>مشاريعي</h2>
+    <p>عملت على عدة مشاريع منها مواقع شخصية، محتوى بصري، وقنوات إلكترونية تهتم بالألعاب والرياضة.</p>
+  </div>
 
-    <!-- قسم الألعاب -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">🎮 قسم الألعاب والتصميمات</h2>
-      <p>هنا هتلقى كل تعديلاتي في PES، خصوصاً ريال مدريد، وصور خاصة وأفكار للتحميل.</p>
-    </section>
+  <div class="section" id="designs">
+    <h2>تصميماتي</h2>
+    <img src="1712803015358.jpg" alt="تصميم 1">
+    <img src="1714941630815.jpg" alt="تصميم 2">
+  </div>
 
-    <!-- تواصل معي -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">📞 تواصل معي</h2>
-      <ul class="space-y-1">
-        <li>🎮 بيس: <strong>Sudanesehot</strong></li>
-        <li>📷 إنستغرام: <a href="https://instagram.com/opkyfymhmd72" class="text-blue-400 hover:underline">opkyfymhmd72</a></li>
-        <li>🎮 ببجي: <strong>لوفى جن MN</strong> — UID: 51670508439</li>
-      </ul>
-    </section>
+  <div class="section" id="contact">
+    <h2>تواصل معي</h2>
+    <p>
+      إنستغرام: <a href="https://instagram.com/opkyfymhmd72" target="_blank">opkyfymhmd72</a><br>
+      حساب PES: Sudanesehot<br>
+      حساب ببجي: لوفى جن MN (UID: 51670508439)
+    </p>
+  </div>
 
-  </main>
-
-  <footer class="text-center py-8 text-sm text-gray-400 mt-10">
-    © 2025 Black Eye. جميع الحقوق محفوظة.
+  <footer>
+    &copy; 2025 بلاك آي
   </footer>
 </body>
 </html>
