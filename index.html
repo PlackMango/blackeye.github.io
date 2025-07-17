@@ -1,76 +1,52 @@
-<!DOCTYPE html><html lang="ar">
-<head>
+<!DOCTYPE html><html lang="ar"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي الشخصي | My Personal Website</title>
+  <title>بلاك آي | Black Eye</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      direction: rtl;
       margin: 0;
       padding: 0;
-    }
-    #language-switcher {
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px;
-      background-color: #f0f0f0;
-    }
-    #language-switcher button {
-      margin-left: 10px;
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-    header, section {
-      padding: 20px;
-    }
-    .lang-ar {
-      direction: rtl;
-      text-align: right;
-    }
-    .lang-en {
-      direction: ltr;
-      text-align: left;
-    }
+    }section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #333;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.en {
+  direction: ltr;
+  text-align: left;
+  margin-top: 10px;
+  font-style: italic;
+  color: #ccc;
+}
+
   </style>
-</head>
-<body dir="rtl">  <div id="language-switcher">
-    <button onclick="setLanguage('ar')">العربية</button>
-    <button onclick="setLanguage('en')">English</button>
-  </div>  <!-- الصفحة الرئيسية -->  <header class="lang-ar">
-    <h1>مرحباً بك في موقعي</h1>
-    <p>هذا الموقع يعرض مشاريعي وتصاميمي وكل ما أقدمه.</p>
-  </header>  <header class="lang-en" style="display:none;">
-    <h1>Welcome to My Website</h1>
-    <p>This site showcases my projects, designs, and everything I offer.</p>
-  </header>  <!-- قسم مشاريعي -->  <section class="lang-ar">
+</head><body>
+  <section>
+    <h2>نبذة عني</h2>
+    <p>أنا بلاك آي، مصمم محتوى ومهتم بالألعاب والتصميم. كما أنني مصمم دمية شنبو الخاصة.</p>
+    <p class="en">I'm Black Eye, a content creator passionate about games and design. I'm also the designer of the Shanbo doll.</p>
+  </section>  <section>
+    <h2>من أنا</h2>
+    <p>أنا بلاك آي، صانع محتوى ومصمم ومهتم بالرياضة والألعاب والتصميم الإبداعي. أعمل على مشاريع فريدة وأحب مشاركة أفكاري بصرياً.</p>
+    <p class="en">I'm Black Eye, a content creator and creative designer interested in sports, games, and innovative visuals. I love working on unique projects and sharing my ideas visually.</p>
+  </section>  <section>
     <h2>مشاريعي</h2>
-    <ul>
-      <li>مطعم Black Mango</li>
-      <li>لعبة Black Boy</li>
-    </ul>
-  </section>  <section class="lang-en" style="display:none;">
-    <h2>My Projects</h2>
-    <ul>
-      <li>Black Mango Restaurant</li>
-      <li>Black Boy Game</li>
-    </ul>
-  </section>  <!-- تواصل معي -->  <section class="lang-ar">
-    <h2>تواصل معي</h2>
-    <p>يمكنك التواصل معي عبر إنستغرام: opkyfymhmd72</p>
-  </section>  <section class="lang-en" style="display:none;">
-    <h2>Contact Me</h2>
-    <p>You can reach me via Instagram: opkyfymhmd72</p>
-  </section>  <script>
-    function setLanguage(lang) {
-      if (lang === 'ar') {
-        document.querySelectorAll('.lang-ar').forEach(e => e.style.display = 'block');
-        document.querySelectorAll('.lang-en').forEach(e => e.style.display = 'none');
-        document.body.dir = "rtl";
-      } else {
-        document.querySelectorAll('.lang-ar').forEach(e => e.style.display = 'none');
-        document.querySelectorAll('.lang-en').forEach(e => e.style.display = 'block');
-        document.body.dir = "ltr";
-      }
-    }
-  </script></body>
-</html>
+    <p>عملت على عدة مشاريع منها مواقع شخصية، محتوى بصري، وقنوات إلكترونية تهتم بالألعاب والرياضة.</p>
+    <p class="en">I've worked on several projects including personal websites, visual content, and digital channels focused on games and sports.</p>
+  </section>
+</body></html>
