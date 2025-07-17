@@ -1,106 +1,99 @@
-<meta name="description" content="موقع بلاك آي الرسمي - مشاريع محمد، تصميمات ألعاب، PES، ومطعم Black Mango">
-<meta name="keywords" content="بلاك آي, محمد, بلاك مانجو, موقع شخصي, تصميم, ألعاب, PES, GitHub">
-<meta name="author" content=""><!DOCTYPE html>
-<html lang="ar" dir="rtl">
+
+<!DOCTYPE html>
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>بلاك آي</title>
+  <title>موقعي الشخصي | My Personal Website</title>
   <style>
     body {
-      background-color: #0e0e0e;
-      color: #fff;
-      font-family: 'Cairo', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
-    header {
-      background-color: #111;
-      text-align: center;
-      padding: 2rem;
+    #language-switcher {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+      background-color: #f0f0f0;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
+    #language-switcher button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
     }
-    nav {
-      text-align: center;
-      margin: 1rem 0;
+    header, section {
+      padding: 20px;
     }
-    nav a {
-      color: #ffc107;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1.2rem;
+    .lang-ar {
+      direction: rtl;
+      text-align: right;
     }
-    .section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    .section img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-top: 1rem;
-    }
-    footer {
-      text-align: center;
-      background-color: #111;
-      padding: 1rem;
-      color: #aaa;
-      font-size: 0.9rem;
+    .lang-en {
+      direction: ltr;
+      text-align: left;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>بلاك آي</h1>
+<body dir="rtl">
+
+  <div id="language-switcher">
+    <button onclick="setLanguage('ar')">العربية</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
+
+  <!-- الصفحة الرئيسية -->
+  <header class="lang-ar">
+    <h1>مرحباً بك في موقعي</h1>
+    <p>هذا الموقع يعرض مشاريعي وتصاميمي وكل ما أقدمه.</p>
   </header>
 
-  <nav>
-    <a href="#about">نبذة</a>
-    <a href="#projects">أعمالي</a>
-    <a href="#designs">تصميمات</a>
-    <a href="#contact">تواصل</a>
-    <img src="design1.jpg" alt="تصميم 1" width="300">
-  </nav>
-<section class="my-8 text-center">
-  <h2 class="text-2xl font-bold mb-4">نبذة عني</h2>
-  <p class="text-lg">
-    أنا بلاك آي، مصمم محتوى ومهتم بالألعاب والتصميم. كما أنني مصمم دمية شنبو الخاصة.
-  </p>
-</section>
-  <div class="section" id="about">
-    <h2>من أنا</h2>
-    <p>أنا بلاك آي، صانع محتوى ومصمم ومهتم بالرياضة والألعاب والتصميم الإبداعي. أعمل على مشاريع فريدة وأحب مشاركة أفكاري بصريًا.</p>
-    <img src="IMG_٢٠٢٣٣٣_٢٠٤٢٠٢.jpg" alt="صورة شخصية">
-  </div>
+  <header class="lang-en" style="display:none;">
+    <h1>Welcome to My Website</h1>
+    <p>This site showcases my projects, designs, and everything I offer.</p>
+  </header>
 
-  <div class="section" id="projects">
+  <!-- قسم مشاريعي -->
+  <section class="lang-ar">
     <h2>مشاريعي</h2>
-    <p>عملت على عدة مشاريع منها مواقع شخصية، محتوى بصري، وقنوات إلكترونية تهتم بالألعاب والرياضة.</p>
-  </div>
+    <ul>
+      <li>مطعم Black Mango</li>
+      <li>لعبة Black Boy</li>
+    </ul>
+  </section>
 
-  <div class="section" id="designs">
-    <h2>تصميماتي</h2>
-    <img src="1712803015358.jpg" alt="تصميم 1">
-    <img src="1714941630815.jpg" alt="تصميم 2">
-  </div>
+  <section class="lang-en" style="display:none;">
+    <h2>My Projects</h2>
+    <ul>
+      <li>Black Mango Restaurant</li>
+      <li>Black Boy Game</li>
+    </ul>
+  </section>
 
-  <div class="section" id="contact">
+  <!-- تواصل معي -->
+  <section class="lang-ar">
     <h2>تواصل معي</h2>
-    <p>
-      إنستغرام: <a href="https://instagram.com/opkyfymhmd72" target="_blank">opkyfymhmd72</a><br>
-      حساب PES: Sudanesehot<br>
-      حساب ببجي: لوفى جن MN (UID: 51670508439)
-    </p>
-  </div>
+    <p>يمكنك التواصل معي عبر إنستغرام: opkyfymhmd72</p>
+  </section>
 
-  <footer>
-    &copy; 2025 بلاك آي
-  </footer>
+  <section class="lang-en" style="display:none;">
+    <h2>Contact Me</h2>
+    <p>You can reach me via Instagram: opkyfymhmd72</p>
+  </section>
+
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'ar') {
+        document.querySelectorAll('.lang-ar').forEach(e => e.style.display = 'block');
+        document.querySelectorAll('.lang-en').forEach(e => e.style.display = 'none');
+        document.body.dir = "rtl";
+      } else {
+        document.querySelectorAll('.lang-ar').forEach(e => e.style.display = 'none');
+        document.querySelectorAll('.lang-en').forEach(e => e.style.display = 'block');
+        document.body.dir = "ltr";
+      }
+    }
+  </script>
+
 </body>
 </html>
-<h1> - بلاك صاحب موقع بلاك آي</h1>
-<p>أهلاً بيك في موقعي الرسمي، أنا بلاك جن مصمم ومطور موقع Black Eye.</p>
-<img src="black.jpg" alt="صورة بلاك" style="width: 200px; border-radius: 50%; box-shadow: 0 0 20px #00ffcc; margin-bottom: 20px;">
