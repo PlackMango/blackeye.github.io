@@ -1,6 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,53 +33,34 @@
     }
   </style>
 </head>
-<body dir="rtl">
-
-  <div id="language-switcher">
+<body dir="rtl">  <div id="language-switcher">
     <button onclick="setLanguage('ar')">العربية</button>
     <button onclick="setLanguage('en')">English</button>
-  </div>
-
-  <!-- الصفحة الرئيسية -->
-  <header class="lang-ar">
+  </div>  <!-- الصفحة الرئيسية -->  <header class="lang-ar">
     <h1>مرحباً بك في موقعي</h1>
     <p>هذا الموقع يعرض مشاريعي وتصاميمي وكل ما أقدمه.</p>
-  </header>
-
-  <header class="lang-en" style="display:none;">
+  </header>  <header class="lang-en" style="display:none;">
     <h1>Welcome to My Website</h1>
     <p>This site showcases my projects, designs, and everything I offer.</p>
-  </header>
-
-  <!-- قسم مشاريعي -->
-  <section class="lang-ar">
+  </header>  <!-- قسم مشاريعي -->  <section class="lang-ar">
     <h2>مشاريعي</h2>
     <ul>
       <li>مطعم Black Mango</li>
       <li>لعبة Black Boy</li>
     </ul>
-  </section>
-
-  <section class="lang-en" style="display:none;">
+  </section>  <section class="lang-en" style="display:none;">
     <h2>My Projects</h2>
     <ul>
       <li>Black Mango Restaurant</li>
       <li>Black Boy Game</li>
     </ul>
-  </section>
-
-  <!-- تواصل معي -->
-  <section class="lang-ar">
+  </section>  <!-- تواصل معي -->  <section class="lang-ar">
     <h2>تواصل معي</h2>
     <p>يمكنك التواصل معي عبر إنستغرام: opkyfymhmd72</p>
-  </section>
-
-  <section class="lang-en" style="display:none;">
+  </section>  <section class="lang-en" style="display:none;">
     <h2>Contact Me</h2>
     <p>You can reach me via Instagram: opkyfymhmd72</p>
-  </section>
-
-  <script>
+  </section>  <script>
     function setLanguage(lang) {
       if (lang === 'ar') {
         document.querySelectorAll('.lang-ar').forEach(e => e.style.display = 'block');
@@ -93,7 +72,5 @@
         document.body.dir = "ltr";
       }
     }
-  </script>
-
-</body>
+  </script></body>
 </html>
