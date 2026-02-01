@@ -1,180 +1,101 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<meta name="description" content="موقع بلاك آي الرسمي - مشاريع محمد، تصميمات ألعاب، PES، ومطعم Black Mango">
+<meta name="keywords" content="بلاك آي, محمد, بلاك مانجو, موقع شخصي, تصميم, ألعاب, PES, GitHub">
+<meta name="author" content=""><!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>بلاك آي</title>  <!-- الخط -->  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">  <style>
-    * {
+  <title>بلاك آي</title>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Cairo', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Cairo', sans-serif;
-    }body {
-  background: #000;
-  color: #fff;
-  line-height: 1.8;
-}
-
-/* ====== NAVBAR ====== */
-header {
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #222;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-nav a {
-  color: #f5b400;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: #fff;
-}
-
-/* ====== HERO ====== */
-.hero {
-  background: #000;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.hero img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 14px;
-  margin-bottom: 30px;
-}
-
-/* ====== SECTIONS ====== */
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-section p {
-  color: #ddd;
-  font-size: 1.05rem;
-}
-
-/* ====== قسم تصاميمي ====== */
-.designs-section {
-  padding: 60px 20px;
-  background: #0f0f0f;
-  color: #fff;
-  text-align: center;
-}
-
-.designs-section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.designs-desc {
-  color: #aaa;
-  margin-bottom: 40px;
-}
-
-.designs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-
-.design-card {
-  background: #1a1a1a;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.design-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(255, 165, 0, 0.25);
-}
-
-.design-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.design-card h3 {
-  margin: 15px 0 5px;
-}
-
-.design-card span {
-  display: block;
-  margin-bottom: 15px;
-  color: #ffa500;
-  font-size: 0.9rem;
-}
-
-/* ====== FOOTER ====== */
-footer {
-  text-align: center;
-  padding: 30px;
-  border-top: 1px solid #222;
-  color: #777;
-}
-
+    }
+    header {
+      background-color: #111;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: #ffc107;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      background-color: #111;
+      padding: 1rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
-<body>  <header>
+<body>
+  <header>
     <h1>بلاك آي</h1>
-    <nav>
-      <a href="#about">نبذة</a>
-      <a href="#projects">أعمالي</a>
-      <a href="#designs">تصاميمي</a>
-      <a href="#contact">تواصل</a>
-    </nav>
-  </header>  <div class="hero">
-    <img src="images/hero.jpg" alt="صورة رئيسية">
-  </div>  <section id="about">
-    <h2>نبذة عني</h2>
-    <p>
-      أنا بلاك آي، مصمم محتوى ومهتم بالألعاب والتصميم، وإني مصمم لعبة <strong>Black Boy</strong>.
-    </p>
-  </section>  <section id="projects">
+  </header>
+
+  <nav>
+    <a href="#about">نبذة</a>
+    <a href="#projects">أعمالي</a>
+    <a href="#designs">تصميمات</a>
+    <a href="#contact">تواصل</a>
+    <img src="design1.jpg" alt="تصميم 1" width="300">
+  </nav>
+
+  <div class="section" id="about">
     <h2>من أنا</h2>
+    <p>أنا بلاك آي، صانع محتوى ومصمم ومهتم بالرياضة والألعاب والتصميم الإبداعي. أعمل على مشاريع فريدة وأحب مشاركة أفكاري بصريًا.</p>
+    <img src="IMG_٢٠٢٣٣٣_٢٠٤٢٠٢.jpg" alt="صورة شخصية">
+  </div>
+
+  <div class="section" id="projects">
+    <h2>مشاريعي</h2>
+    <p>عملت على عدة مشاريع منها مواقع شخصية، محتوى بصري، وقنوات إلكترونية تهتم بالألعاب والرياضة.</p>
+  </div>
+
+  <div class="section" id="designs">
+    <h2>تصميماتي</h2>
+    <img src="1712803015358.jpg" alt="تصميم 1">
+    <img src="1714941630815.jpg" alt="تصميم 2">
+  </div>
+
+  <div class="section" id="contact">
+    <h2>تواصل معي</h2>
     <p>
-      أنا بلاك آي، صانع محتوى ومصمم ومهتم بالرياضة والألعاب والتصميم الإبداعي. أعمل على مشاريع فريدة وأحب مشاركة أفكاري بصرياً.
+      إنستغرام: <a href="https://instagram.com/opkyfymhmd72" target="_blank">opkyfymhmd72</a><br>
+      حساب PES: Sudanesehot<br>
+      حساب ببجي: لوفى جن MN (UID: 51670508439)
     </p>
-  </section>  <!-- قسم تصاميمي -->  <section id="designs" class="designs-section">
-    <h2>تصاميمي</h2>
-    <p class="designs-desc">مجموعة من أعمالي في التصميم وتعديل الألعاب والمشاريع البصرية.</p><div class="designs-grid">
-  <div class="design-card">
-    <img src="images/design1.jpg" alt="تصميم 1">
-    <h3>تصميم 1</h3>
-    <span>تصميم جرافيك</span>
   </div>
 
-  <div class="design-card">
-    <img src="images/design2.jpg" alt="تصميم 2">
-    <h3>تصميم 2</h3>
-    <span>PES Mod</span>
-  </div>
-
-  <div class="design-card">
-    <img src="images/design3.jpg" alt="تصميم 3">
-    <h3>تصميم 3</h3>
-    <span>مشروع Black Mango</span>
-  </div>
-</div>
-
-  </section>  <footer>
-    جميع الحقوق محفوظة © بلاك آي<br>
-    0111118584
-  </footer></body>
+  <footer>
+    &copy; 2025 بلاك آي
+  </footer>
+</body>
 </html>
+<h1> - بلاك صاحب موقع بلاك آي</h1>
+<p>أهلاً بيك في موقعي الرسمي، أنا بلاك جن مصمم ومطور موقع Black Eye.</p>
+<img src="black.jpg" alt="صورة بلاك" style="width: 200px; border-radius: 50%; box-shadow: 0 0 20px #00ffcc; margin-bottom: 20px;">
