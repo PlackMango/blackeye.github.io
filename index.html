@@ -1,52 +1,180 @@
-<!DOCTYPE html><html lang="ar"><head>
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>بلاك آي | Black Eye</title>
-  <style>
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-      direction: rtl;
+  <title>بلاك آي</title>  <!-- الخط -->  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">  <style>
+    * {
       margin: 0;
       padding: 0;
-    }section {
-  padding: 40px 20px;
-  border-bottom: 1px solid #333;
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }body {
+  background: #000;
+  color: #fff;
+  line-height: 1.8;
 }
 
-h2 {
-  font-size: 28px;
+/* ====== NAVBAR ====== */
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #f0f0f0;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.7;
+nav a {
+  color: #f5b400;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
 }
 
-.en {
-  direction: ltr;
-  text-align: left;
-  margin-top: 10px;
-  font-style: italic;
-  color: #ccc;
+nav a:hover {
+  color: #fff;
+}
+
+/* ====== HERO ====== */
+.hero {
+  background: #000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+
+/* ====== SECTIONS ====== */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  color: #ddd;
+  font-size: 1.05rem;
+}
+
+/* ====== قسم تصاميمي ====== */
+.designs-section {
+  padding: 60px 20px;
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+}
+
+.designs-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.designs-desc {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.designs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.design-card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(255, 165, 0, 0.25);
+}
+
+.design-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.design-card h3 {
+  margin: 15px 0 5px;
+}
+
+.design-card span {
+  display: block;
+  margin-bottom: 15px;
+  color: #ffa500;
+  font-size: 0.9rem;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #222;
+  color: #777;
 }
 
   </style>
-</head><body>
-  <section>
+</head>
+<body>  <header>
+    <h1>بلاك آي</h1>
+    <nav>
+      <a href="#about">نبذة</a>
+      <a href="#projects">أعمالي</a>
+      <a href="#designs">تصاميمي</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>  <div class="hero">
+    <img src="images/hero.jpg" alt="صورة رئيسية">
+  </div>  <section id="about">
     <h2>نبذة عني</h2>
-    <p>أنا بلاك آي، مصمم محتوى ومهتم بالألعاب والتصميم. كما أنني مصمم دمية شنبو الخاصة.</p>
-    <p class="en">I'm Black Eye, a content creator passionate about games and design. I'm also the designer of the Shanbo doll.</p>
-  </section>  <section>
+    <p>
+      أنا بلاك آي، مصمم محتوى ومهتم بالألعاب والتصميم، وإني مصمم لعبة <strong>Black Boy</strong>.
+    </p>
+  </section>  <section id="projects">
     <h2>من أنا</h2>
-    <p>أنا بلاك آي، صانع محتوى ومصمم ومهتم بالرياضة والألعاب والتصميم الإبداعي. أعمل على مشاريع فريدة وأحب مشاركة أفكاري بصرياً.</p>
-    <p class="en">I'm Black Eye, a content creator and creative designer interested in sports, games, and innovative visuals. I love working on unique projects and sharing my ideas visually.</p>
-  </section>  <section>
-    <h2>مشاريعي</h2>
-    <p>عملت على عدة مشاريع منها مواقع شخصية، محتوى بصري، وقنوات إلكترونية تهتم بالألعاب والرياضة.</p>
-    <p class="en">I've worked on several projects including personal websites, visual content, and digital channels focused on games and sports.</p>
-  </section>
-</body></html>
+    <p>
+      أنا بلاك آي، صانع محتوى ومصمم ومهتم بالرياضة والألعاب والتصميم الإبداعي. أعمل على مشاريع فريدة وأحب مشاركة أفكاري بصرياً.
+    </p>
+  </section>  <!-- قسم تصاميمي -->  <section id="designs" class="designs-section">
+    <h2>تصاميمي</h2>
+    <p class="designs-desc">مجموعة من أعمالي في التصميم وتعديل الألعاب والمشاريع البصرية.</p><div class="designs-grid">
+  <div class="design-card">
+    <img src="images/design1.jpg" alt="تصميم 1">
+    <h3>تصميم 1</h3>
+    <span>تصميم جرافيك</span>
+  </div>
+
+  <div class="design-card">
+    <img src="images/design2.jpg" alt="تصميم 2">
+    <h3>تصميم 2</h3>
+    <span>PES Mod</span>
+  </div>
+
+  <div class="design-card">
+    <img src="images/design3.jpg" alt="تصميم 3">
+    <h3>تصميم 3</h3>
+    <span>مشروع Black Mango</span>
+  </div>
+</div>
+
+  </section>  <footer>
+    جميع الحقوق محفوظة © بلاك آي<br>
+    0111118584
+  </footer></body>
+</html>
