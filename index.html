@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>موقع محمد الشخصي</title>
+<title>بلاك آي</title>
 <style>
-  /* ألوان مستقبلية */
   :root {
     --ai-blue: #00AEEF;
     --hacker-green: #39FF14;
@@ -18,10 +17,10 @@
     font-family: Arial, sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-light);
-    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
-  /* الصفحة الرئيسية */
+  /* --- Hero Section --- */
   .hero {
     height: 100vh;
     display: flex;
@@ -50,30 +49,188 @@
     to { text-shadow: 0 0 20px var(--ai-blue), 0 0 30px var(--hacker-green); }
   }
 
-  /* Footer */
+  /* --- Sections --- */
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  section h2 {
+    color: var(--ai-blue);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px var(--ai-blue), 0 0 10px var(--hacker-green);
+  }
+
+  section p, section li {
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  /* --- Cards for Designs/Projects --- */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #111;
+    padding: 20px;
+    border: 1px solid var(--ai-blue);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--ai-blue), 0 0 30px var(--hacker-green);
+  }
+
+  /* --- Contact Form --- */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input, textarea {
+    padding: 10px;
+    border: 1px solid var(--ai-blue);
+    border-radius: 5px;
+    background-color: #111;
+    color: var(--text-light);
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--ai-blue);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: var(--hacker-green);
+  }
+
+  /* --- Footer --- */
   footer {
-    background-color: #000000;
+    background-color: #000;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
     color: var(--text-light);
     font-size: 0.9rem;
     border-top: 1px solid var(--ai-blue);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
   }
+
+  footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  footer p {
+    margin: 5px 0;
+  }
+
+  footer .glow-text {
+    color: var(--ai-blue);
+    text-shadow: 0 0 10px var(--ai-blue), 0 0 20px var(--hacker-green);
+    font-weight: bold;
+  }
+
   footer span {
     color: var(--hacker-green);
   }
+
+  /* --- Responsive --- */
+  @media(max-width:600px){
+    .hero h1 { font-size:2rem; }
+    section h2 { font-size:1.5rem; }
+  }
+
 </style>
 </head>
 <body>
 
-  <section class="hero">
-    <h1>أهلاً بك في عالمي الرقمي</h1>
-    <p>مستقبل التكنولوجيا وستايل الهاكرز</p>
-  </section>
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <h1>مرحباً بك في بلاك آي</h1>
+  <p>مستقبل التكنولوجيا وستايل الهاكرز</p>
+</section>
 
-  <footer>
-    جميع الحقوق محفوظة © محمد | <span>0111118584</span>
-  </footer>
+<!-- 1️⃣ About Section -->
+<section id="about">
+  <h2>نبذة عني</h2>
+  <p>أنا بلاك آي، مصمم ومطور موقع بلاك آي الشخصي. مصمم مشاريع رقمية وتجارب تفاعلية متقدمة. هذا الموقع يعرض تصميماتي وأعمالي الرقمية بطريقة احترافية.</p>
+</section>
+
+<!-- 2️⃣ Designs / Projects Section -->
+<section id="designs">
+  <h2>قسم التصميم</h2>
+  <div class="cards">
+    <div class="card">تصميم واجهات رقمية</div>
+    <div class="card">تعديلات الألعاب</div>
+    <div class="card">تجارب تفاعلية Future UI</div>
+  </div>
+</section>
+
+<!-- 3️⃣ Contact Section -->
+<section id="contact">
+  <h2>تواصل معي</h2>
+  <form>
+    <input type="text" placeholder="اسمك" required>
+    <input type="email" placeholder="بريدك الإلكتروني" required>
+    <textarea placeholder="رسالتك" rows="5" required></textarea>
+    <button type="submit">أرسل</button>
+  </form>
+</section>
+
+<!-- 4️⃣ Accounts Section -->
+<section id="accounts">
+  <h2>الروابط الشخصية</h2>
+  <ul>
+    <li>ببجي: لوفى جن MN | UID: 51670508439</li>
+    <li>إنستغرام: opkyfymhmd72</li>
+    <li>فيسبوك: <a href="https://www.facebook.com/slym.mhmd.992698" target="_blank" style="color:var(--hacker-green)">slym.mhmd.992698</a></li>
+    <li>PES: Sudanesehot</li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <p class="glow-text">أنا بلاك، صاحب موقع بلاك آي.</p>
+  <p class="glow-text">أهلاً بك في موقعي الرسمي والشخصي، حيث تتجلى هويتي الرقمية وثقتي في ما أقدمه.</p>
+  <p class="glow-text">.Black Eye</p>
+  <p><span>0111118584</span> | جميع الحقوق محفوظة</p>
+</footer>
+
+<script>
+  // Scroll animation for footer
+  window.addEventListener('scroll', function() {
+    const footer = document.getElementById('footer');
+    const rect = footer.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 50){
+      footer.classList.add('visible');
+    }
+  });
+</script>
 
 </body>
 </html>
