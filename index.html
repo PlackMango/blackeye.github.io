@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> بلاك آي.خش برجلك اليمين </title>
+<title>بلاك آي</title>
 <style>
   :root {
     --ai-blue: #00AEEF;
@@ -22,36 +22,38 @@
 
   /* --- Hero Section --- */
   .hero {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: var(--bg-dark);
+    background: #0B0B0B;
+    padding: 20px;
   }
 
   .hero h1 {
     font-size: 4rem;
     color: var(--ai-blue);
-    text-shadow: 0 0 15px var(--ai-blue), 0 0 30px var(--hacker-green);
+    text-shadow: 0 0 20px var(--ai-blue), 0 0 40px var(--hacker-green);
     animation: glow 2s infinite alternate;
+    margin: 0;
   }
 
   .hero p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--hacker-green);
     margin-top: 1rem;
   }
 
   @keyframes glow {
-    from { text-shadow: 0 0 10px var(--ai-blue), 0 0 20px var(--hacker-green); }
-    to { text-shadow: 0 0 30px var(--ai-blue), 0 0 50px var(--hacker-green); }
+    from { text-shadow: 0 0 15px var(--ai-blue), 0 0 30px var(--hacker-green); }
+    to { text-shadow: 0 0 35px var(--ai-blue), 0 0 60px var(--hacker-green); }
   }
 
   /* --- Sections --- */
   section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     max-width: 1000px;
     margin: auto;
     opacity: 0;
@@ -66,14 +68,15 @@
 
   section h2 {
     color: var(--ai-blue);
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px var(--ai-blue), 0 0 20px var(--hacker-green);
+    text-shadow: 0 0 15px var(--ai-blue), 0 0 30px var(--hacker-green);
   }
 
   section p, section li {
     color: var(--text-light);
     line-height: 1.6;
+    font-size: 1.2rem;
   }
 
   ul {
@@ -85,32 +88,37 @@
     margin-bottom: 10px;
   }
 
-  /* --- Cards for Designs/Projects --- */
+  /* --- Cards for Images --- */
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
 
   .card {
     background-color: #111;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 12px;
     border: 1px solid var(--ai-blue);
-    border-radius: 15px;
+    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
   }
 
   .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 30px var(--ai-blue), 0 0 40px var(--hacker-green);
+    box-shadow: 0 0 35px var(--ai-blue), 0 0 45px var(--hacker-green);
   }
 
-  /* --- Images --- */
-  .card img, .section-image {
+  .card img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
+  }
+
+  .section-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
   }
 
   /* --- Contact Form --- */
@@ -126,6 +134,7 @@
     border-radius: 8px;
     background-color: #111;
     color: var(--text-light);
+    font-size: 1rem;
   }
 
   button {
@@ -136,6 +145,7 @@
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1.1rem;
     transition: 0.3s;
   }
 
@@ -162,25 +172,29 @@
   }
 
   footer p {
-    margin: 5px 0;
+    margin: 8px 0;
   }
 
   footer .glow-text {
     color: var(--ai-blue);
-    text-shadow: 0 0 15px var(--ai-blue), 0 0 30px var(--hacker-green);
+    text-shadow: 0 0 20px var(--ai-blue), 0 0 40px var(--hacker-green);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   footer span {
     color: var(--hacker-green);
     font-weight: bold;
+    font-size: 1.2rem;
   }
 
   /* --- Responsive --- */
   @media(max-width:600px){
     .hero h1 { font-size:2.5rem; }
-    section h2 { font-size:1.8rem; }
+    .hero p { font-size:1.3rem; }
+    section h2 { font-size:2rem; }
+    section p, section li { font-size:1rem; }
+    button { font-size:1rem; }
   }
 
 </style>
@@ -190,14 +204,14 @@
 <!-- Hero Section -->
 <section class="hero" id="home">
   <h1>مرحباً بك في بلاك آي</h1>
-  <p>مستقبل التكنولوجيا الهاكرز</p>
+  <p>مستقبل التكنولوجيا والهاكرز</p>
 </section>
 
 <!-- 1️⃣ About Section -->
 <section id="about">
   <h2>نبذة عني</h2>
   <img src="about-image.jpg" alt="صورة عني" class="section-image">
-  <p>أنا بلاك آي، مصمم ومطور موقع بلاك آي الشخصي. مصمم مشاريع رقمية وتجارب تفاعلية متقدمة. هذا الموقع يعرض تصميماتي وأعمالي الرقمية بطريقة احترافية.</p>
+  <p> أنا بلاك آي، مصمم ومطور موقع بلاك آي الشخصي. مصمم مشاريع رقمية وتجارب تفاعلية متقدمة. هذا الموقع يعرض تصميماتي وأعمالي الرقمية بطريقة احترافيةاش عملته على كذه مشروع منهم برمجة لعبة plack poy.</p>
 </section>
 
 <!-- 2️⃣ Designs Section -->
@@ -245,37 +259,4 @@
 
 <!-- 5️⃣ Contact Section -->
 <section id="contact">
-  <h2>تواصل معي</h2>
-  <form>
-    <input type="text" placeholder="اسمك" required>
-    <input type="email" placeholder="بريدك الإلكتروني" required>
-    <textarea placeholder="رسالتك" rows="5" required></textarea>
-    <button type="submit">أرسل</button>
-  </form>
-</section>
-
-<!-- Footer -->
-<footer id="footer">
-  <img src="footer-image.jpg" alt="صورة الختام" class="section-image">
-  <p class="glow-text">أنا بلاك، صاحب موقع بلاك آي.</p>
-  <p class="glow-text">أهلاً بك في موقعي الرسمي والشخصي، حيث تتجلى هويتي الرقمية وثقتي في ما أقدمه.</p>
-  <p class="glow-text">.Black Eye</p>
-  <p><span>0111118584</span> | جميع الحقوق محفوظة</p>
-</footer>
-
-<script>
-  // Scroll animation for sections and footer
-  const sections = document.querySelectorAll('section, footer');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-      }
-    });
-  }, {threshold:0.2});
-
-  sections.forEach(section => observer.observe(section));
-</script>
-
-</body>
-</html>
+  <h2>تواصل
