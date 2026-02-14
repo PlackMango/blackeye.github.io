@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بلاك آي</title>
+<title> بلاك آي.خش برجلك اليمين </title>
 <style>
   :root {
     --ai-blue: #00AEEF;
@@ -32,35 +32,43 @@
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--ai-blue);
-    text-shadow: 0 0 10px var(--ai-blue), 0 0 20px var(--hacker-green);
+    text-shadow: 0 0 15px var(--ai-blue), 0 0 30px var(--hacker-green);
     animation: glow 2s infinite alternate;
   }
 
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--hacker-green);
     margin-top: 1rem;
   }
 
   @keyframes glow {
-    from { text-shadow: 0 0 5px var(--ai-blue), 0 0 10px var(--hacker-green); }
-    to { text-shadow: 0 0 20px var(--ai-blue), 0 0 30px var(--hacker-green); }
+    from { text-shadow: 0 0 10px var(--ai-blue), 0 0 20px var(--hacker-green); }
+    to { text-shadow: 0 0 30px var(--ai-blue), 0 0 50px var(--hacker-green); }
   }
 
   /* --- Sections --- */
   section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     max-width: 1000px;
     margin: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   section h2 {
     color: var(--ai-blue);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    text-shadow: 0 0 5px var(--ai-blue), 0 0 10px var(--hacker-green);
+    text-shadow: 0 0 10px var(--ai-blue), 0 0 20px var(--hacker-green);
   }
 
   section p, section li {
@@ -88,13 +96,21 @@
     background-color: #111;
     padding: 20px;
     border: 1px solid var(--ai-blue);
-    border-radius: 10px;
+    border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
   }
 
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px var(--ai-blue), 0 0 30px var(--hacker-green);
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px var(--ai-blue), 0 0 40px var(--hacker-green);
+  }
+
+  /* --- Images --- */
+  .card img, .section-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   /* --- Contact Form --- */
@@ -105,17 +121,17 @@
   }
 
   input, textarea {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid var(--ai-blue);
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #111;
     color: var(--text-light);
   }
 
   button {
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: var(--ai-blue);
     color: #fff;
     font-weight: bold;
@@ -131,9 +147,9 @@
   footer {
     background-color: #000;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     color: var(--text-light);
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-top: 1px solid var(--ai-blue);
     opacity: 0;
     transform: translateY(30px);
@@ -151,18 +167,20 @@
 
   footer .glow-text {
     color: var(--ai-blue);
-    text-shadow: 0 0 10px var(--ai-blue), 0 0 20px var(--hacker-green);
+    text-shadow: 0 0 15px var(--ai-blue), 0 0 30px var(--hacker-green);
     font-weight: bold;
+    font-size: 1.2rem;
   }
 
   footer span {
     color: var(--hacker-green);
+    font-weight: bold;
   }
 
   /* --- Responsive --- */
   @media(max-width:600px){
-    .hero h1 { font-size:2rem; }
-    section h2 { font-size:1.5rem; }
+    .hero h1 { font-size:2.5rem; }
+    section h2 { font-size:1.8rem; }
   }
 
 </style>
@@ -172,26 +190,60 @@
 <!-- Hero Section -->
 <section class="hero" id="home">
   <h1>مرحباً بك في بلاك آي</h1>
-  <p>مستقبل التكنولوجيا وستايل الهاكرز</p>
+  <p>مستقبل التكنولوجيا الهاكرز</p>
 </section>
 
 <!-- 1️⃣ About Section -->
 <section id="about">
   <h2>نبذة عني</h2>
+  <img src="about-image.jpg" alt="صورة عني" class="section-image">
   <p>أنا بلاك آي، مصمم ومطور موقع بلاك آي الشخصي. مصمم مشاريع رقمية وتجارب تفاعلية متقدمة. هذا الموقع يعرض تصميماتي وأعمالي الرقمية بطريقة احترافية.</p>
 </section>
 
-<!-- 2️⃣ Designs / Projects Section -->
+<!-- 2️⃣ Designs Section -->
 <section id="designs">
   <h2>قسم التصميم</h2>
   <div class="cards">
-    <div class="card">تصميم واجهات رقمية</div>
-    <div class="card">تعديلات الألعاب</div>
-    <div class="card">تجارب تفاعلية Future UI</div>
+    <div class="card">
+      <img src="design1.jpg" alt="تصميم 1">
+      تصميم واجهات رقمية
+    </div>
+    <div class="card">
+      <img src="design2.jpg" alt="تصميم 2">
+      تصميم تفاعلي
+    </div>
   </div>
 </section>
 
-<!-- 3️⃣ Contact Section -->
+<!-- 3️⃣ Modifications Section -->
+<section id="modifications">
+  <h2>قسم التعديلات</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="mod1.jpg" alt="تعديل 1">
+      تعديل الألعاب
+    </div>
+    <div class="card">
+      <img src="mod2.jpg" alt="تعديل 2">
+      تعديل واجهات
+    </div>
+  </div>
+</section>
+
+<!-- 4️⃣ Accounts Section -->
+<section id="accounts">
+  <h2>الروابط الشخصية</h2>
+  <ul>
+    <li>ببجي: لوفى جن MN | UID: 51670508439</li>
+    <li><a href="https://www.instagram.com/opkyfymhmd72" target="_blank" 
+           style="color:var(--hacker-green); font-weight:bold; text-decoration:none;">إنستغرام</a></li>
+    <li>فيسبوك: <a href="https://www.facebook.com/slym.mhmd.992698" target="_blank" 
+           style="color:var(--hacker-green); font-weight:bold; text-decoration:none;">slym.mhmd.992698</a></li>
+    <li>PES: Sudanesehot</li>
+  </ul>
+</section>
+
+<!-- 5️⃣ Contact Section -->
 <section id="contact">
   <h2>تواصل معي</h2>
   <form>
@@ -202,19 +254,9 @@
   </form>
 </section>
 
-<!-- 4️⃣ Accounts Section -->
-<section id="accounts">
-  <h2>الروابط الشخصية</h2>
-  <ul>
-    <li>ببجي: لوفى جن MN | UID: 51670508439</li>
-    <li>إنستغرام: opkyfymhmd72</li>
-    <li>فيسبوك: <a href="https://www.facebook.com/slym.mhmd.992698" target="_blank" style="color:var(--hacker-green)">slym.mhmd.992698</a></li>
-    <li>PES: Sudanesehot</li>
-  </ul>
-</section>
-
 <!-- Footer -->
 <footer id="footer">
+  <img src="footer-image.jpg" alt="صورة الختام" class="section-image">
   <p class="glow-text">أنا بلاك، صاحب موقع بلاك آي.</p>
   <p class="glow-text">أهلاً بك في موقعي الرسمي والشخصي، حيث تتجلى هويتي الرقمية وثقتي في ما أقدمه.</p>
   <p class="glow-text">.Black Eye</p>
@@ -222,14 +264,17 @@
 </footer>
 
 <script>
-  // Scroll animation for footer
-  window.addEventListener('scroll', function() {
-    const footer = document.getElementById('footer');
-    const rect = footer.getBoundingClientRect();
-    if(rect.top < window.innerHeight - 50){
-      footer.classList.add('visible');
-    }
-  });
+  // Scroll animation for sections and footer
+  const sections = document.querySelectorAll('section, footer');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {threshold:0.2});
+
+  sections.forEach(section => observer.observe(section));
 </script>
 
 </body>
