@@ -1,102 +1,79 @@
-<meta name="description" content="موقع بلاك آي الرسمي - مشاريع محمد، تصميمات ألعاب، PES، ومطعم Black Mango">
-<meta name="keywords" content="بلاك آي, محمد, بلاك مانجو, موقع شخصي, تصميم, ألعاب, PES, GitHub">
-<meta name="author" content=""><!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>بلاك آي</title>
-  <style>
-    body {
-      background-color: #0e0e0e;
-      color: #fff;
-      font-family: 'Cairo', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #111;
-      text-align: center;
-      padding: 2rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    nav {
-      text-align: center;
-      margin: 1rem 0;
-    }
-    nav a {
-      color: #ffc107;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1.2rem;
-    }
-    .section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    .section img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-top: 1rem;
-    }
-    footer {
-      text-align: center;
-      background-color: #111;
-      padding: 1rem;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موقع محمد الشخصي</title>
+<style>
+  /* ألوان مستقبلية */
+  :root {
+    --ai-blue: #00AEEF;
+    --hacker-green: #39FF14;
+    --bg-dark: #0B0B0B;
+    --text-light: #FFFFFF;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+  }
+
+  /* الصفحة الرئيسية */
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--bg-dark);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    color: var(--ai-blue);
+    text-shadow: 0 0 10px var(--ai-blue), 0 0 20px var(--hacker-green);
+    animation: glow 2s infinite alternate;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    color: var(--hacker-green);
+    margin-top: 1rem;
+  }
+
+  @keyframes glow {
+    from { text-shadow: 0 0 5px var(--ai-blue), 0 0 10px var(--hacker-green); }
+    to { text-shadow: 0 0 20px var(--ai-blue), 0 0 30px var(--hacker-green); }
+  }
+
+  /* Footer */
+  footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--ai-blue);
+  }
+  footer span {
+    color: var(--hacker-green);
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>بلاك آي</h1>
-  </header>
 
-  <nav>
-    <a href="#about">نبذة</a>
-    <a href="#projects">أعمالي</a>
-    <a href="#designs">تصميمات</a>
-    <a href="#contact">تواصل</a>
-    <img src="design1.jpg" alt="تصميم 1" width="300">
-  </nav>
-
-  <div class="section" id="about">
-    <h2>من أنا</h2>
-    <p>أنا بلاك آي، صانع محتوى ومصمم ومهتم بالرياضة والألعاب والتصميم الإبداعي. أعمل على مشاريع فريدة ومشاركة أفكاري بصريًا.</p>
-    <img src="IMG_٢٠٢٣٣٣_٢٠٤٢٠٢.jpg" alt="صورة شخصية">
-  </div>
-
-  <div class="section" id="projects">
-    <h2>مشاريعي</h2>
-    <p>عملت على عدة مشاريع منها مواقع شخصية، محتوى بصري، وقنوات إلكترونية تهتم بالألعاب والرياضة.</p>
-  </div>
-
-  <div class="section" id="designs">
-    <h2>تصميماتي</h2>
-    <img src="1712803015358.jpg" alt="تصميم 1">
-    <img src="1714941630815.jpg" alt="تصميم 2">
-  </div>
-
-  <div class="section" id="contact">
-    <h2>تواصل معي</h2>
-    <p>
-      إنستغرام: <a href="https://instagram.com/opkyfymhmd72" target="_blank">opkyfymhmd72</a><br>
-      حساب PES: Peanuts Hot
-      حساب ببجي: لوفى جن MN (UID: 51670508439)
-    </p>
-  </div>
+  <section class="hero">
+    <h1>أهلاً بك في عالمي الرقمي</h1>
+    <p>مستقبل التكنولوجيا وستايل الهاكرز</p>
+  </section>
 
   <footer>
-    &copy; 2025 بلاك آي
+    جميع الحقوق محفوظة © محمد | <span>0111118584</span>
   </footer>
+
 </body>
 </html>
-<h1> - بلاك صاحب موقع بلاك آي</h1>
-<p>أهلاً بيك في موقعي الرسمي، أنا بلاك جن مصمم ومطور موقع Black Eye.</p>
-<img src="black.jpg" alt="صورة بلاك" style="width: 200px; border-radius: 50%; box-shadow: 0 0 20px #00ffcc; margin-bottom: 20px;">
-0111118584 
